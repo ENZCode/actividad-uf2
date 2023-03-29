@@ -16,10 +16,10 @@ public class notas {
 	
 	// declaramos la variables que nos hacen falta
 	double uf1, uf2, uf3;
-	double acu1, acu2, acu3, def;
+	double acu1, acu2, acu3, fin;
 	
 	// utilizamos Scanner para introducir datos
-	Scanner entrada = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 
 	
 	/**
@@ -31,13 +31,13 @@ public class notas {
 		System.out.println("ingrese las notas del estudiante");
 
 		System.out.print("ingrese nota 1: ");
-		uf1 = entrada.nextDouble();
+		uf1 = sc.nextDouble();
 
 		System.out.print("ingrese nota 2: ");
-		uf2 = entrada.nextDouble();
+		uf2 = sc.nextDouble();
 
 		System.out.print("ingrese nota 3: ");
-		uf3 = entrada.nextDouble();
+		uf3 = sc.nextDouble();
 	}
 
 	
@@ -70,7 +70,7 @@ public class notas {
 		acu1 = uf1 * 0.35;
 		acu2 = uf2 * 0.35;
 		acu3 = uf3 * 0.30;
-		def = acu1 + acu2 + acu3;
+		fin = acu1 + acu2 + acu3;
 		//aqui la tenemos calculada pero no la mostramos
 	}
 
@@ -88,7 +88,7 @@ public class notas {
 		System.out.println(" acumulado 2 = " + acu2);
 		System.out.println(" acumulado 3 = " + acu3);
 
-		System.out.println(" nota definitiva es = " + def);
+		System.out.println(" nota final es = " + fin);
 	}
 
 	
@@ -96,10 +96,10 @@ public class notas {
      * Método para verificar si el estudiante ha aprobado o no
      */
 	public void aprobado() {
-		if (def < 5 && def >= 0) {
+		if (fin < 5 && fin >= 0) {
 			System.out.println("suspendio");
 		} else {
-			if (def >= 5 && def <= 10) {
+			if (fin >= 5 && fin <= 10) {
 				System.out.println("aprobado");
 			} else {
 				System.out.println(" error en la notas");
