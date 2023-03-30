@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class notas {
 	
 	// declaramos la variables que nos hacen falta
-	double uf1, uf2, uf3;
+	double uf1, uf2, uf4;
 	double acu1, acu2, acu3, fin;
 	
 	// utilizamos Scanner para introducir datos
@@ -23,7 +23,7 @@ public class notas {
 
 	
 	/**
-     * Método para ingresar notas por teclado e
+     * Método para ingresar 
      * comentario 2.1
      */
 	public void IngresaNotas() {
@@ -38,7 +38,7 @@ public class notas {
 		uf2 = sc.nextDouble();
 
 		System.out.print("ingrese nota 3: ");
-		uf3 = sc.nextDouble();
+		uf4 = sc.nextDouble();
 	}
 
 	
@@ -56,7 +56,7 @@ public class notas {
 		} else {
 			System.out.println(" nota2 correcta");
 		}
-		if (uf3 > 10) {
+		if (uf4 > 10) {
 			System.out.println(" nota3 mal introducida");
 		} else {
 			System.out.println(" nota3 correcta");
@@ -70,7 +70,7 @@ public class notas {
 	public void Calculonotas() {
 		acu1 = uf1 * 0.35;
 		acu2 = uf2 * 0.35;
-		acu3 = uf3 * 0.30;
+		acu3 = uf4 * 0.30;
 		fin = acu1 + acu2 + acu3;
 		//aqui la tenemos calculada pero no la mostramos
 	}
@@ -83,7 +83,7 @@ public class notas {
 		System.out.println(" notas introducidas son:");
 		System.out.println(" nota1 = " + uf1);
 		System.out.println(" nota2 = " + uf2);
-		System.out.println(" nota3 = " + uf3);
+		System.out.println(" nota3 = " + uf4);
 
 		System.out.println(" acumulado 1 = " + acu1);
 		System.out.println(" acumulado 2 = " + acu2);
