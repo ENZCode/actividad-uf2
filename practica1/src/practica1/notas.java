@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 
  * @author enric
- * @version 1.1
+ * @version 2.0
  * 
  * La clase notas se encarga de ingresar notas de un estudiante, calcular la 
  * nota definitiva y verificar si está aprobado o no.
