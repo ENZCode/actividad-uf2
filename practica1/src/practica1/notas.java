@@ -24,7 +24,7 @@ public class notas {
 	
 	/**
      * Método para ingresar notas por teclado
-     * comentario
+     * comentario 2
      */
 	public void IngresaNotas() {
 		
